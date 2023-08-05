@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.teamcontainer{
+    width: 100%;
+    justify-content: center;
+    background-color: #fff;
+}
+.teamcardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center
+}
+.membercard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px #aaaaaa;
+    /* background-color: #3b82f6; */
+    padding: 8px;
+    margin: 10px 20px;
+    margin-bottom: 50px;  
+    background-color: rgb(158 158 158 / 10%);
+}
+.membername h3{
+    font-family: 'Rubik', sans-serif;
+    margin: 5px;
+    margin-top: 25px;
+    font-size: 1.5rem;
+}
+.membercard img{
+    width: 200px;
+    border-radius: 100%;
+}
+.membercard p{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.header{
+    text-align: center;
+    justify-content: center;
+    font-family: "Montserrat" , sans-serif;
+    font-size: 5vw;
+    padding-bottom: 15px;
+    margin: 3rem 0;
+    border-bottom: 5px solid #3b82f6;
+    font-weight: bolder;
+}
+
+@media (max-width:1000px){
+    .header{
+        padding-top: 15px;
+        font-size: 6.4vw;
+    }
+}
+
+
+.text2{
+    align-items: center;
+  }
+  .text2 h1{
+      width: fit-content;
+      font-family: 'Rubik', sans-serif;
+      font-size: 5vw;
+      margin: 80px auto;
+      color: #0440a1;
+      border-bottom: 5px solid #0440a1;
+      font-weight: bolder;
+  }
+  @media screen and (min-width : 1080px){
+    .text2 h1{
+      font-size: 3rem ;
+    }
+    
+  }

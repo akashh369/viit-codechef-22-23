@@ -1,0 +1,92 @@
+.maincontainer{
+  background-color: aliceblue;
+}
+.text{
+  margin-top: 30px;
+  align-items: center;
+}
+.text h1{
+  width: fit-content;
+  text-align: center;
+    justify-content: center;
+    font-family: "Montserrat" , sans-serif;
+    font-size: 5vw;
+    padding-bottom: 15px;
+    margin: 80px auto;
+    border-bottom: 5px solid #3b82f6;
+    font-weight: bolder;
+}
+@media screen and (min-width : 1080px){
+  .text h1{
+    font-size: 3rem ;
+  }
+  
+}
+.flexcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  /* transition: transform .2s; */
+}
+/* .flexcontainer :hover{
+  transform: scale(1.2);
+} */
+
+.contestcontainer{
+  transition: transform .2s linear ;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2);
+}
+.contestcontainer:hover{
+  transform: scale(1.1);
+}
+
+.card {
+    width: 600px;
+    text-align: center;
+    font-family: arial;
+  }
+
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .button {
+    /* border: none;
+    outline: 0;
+    padding: 12px;
+    margin: 5px auto;
+    color: white;
+    background-color: #3b82f6;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px; */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor:pointer;
+  }
+
+  .button2 {
+    background-color: #008CBA;
+    color:white;  
+    border-radius: 5px;
+  }
+  
+  .button2:hover {
+    background-color: #6268de; 
+    font-weight: bold; 
+  }
+  
+  .card img{
+    height: 300px;
+    min-height: 100px;
+    width: auto;
+    margin-top: 2px;
+  }

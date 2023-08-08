@@ -1,0 +1,25 @@
+<svg width="300px" height="300px" viewBox="0 0 300 300">
+  <defs>
+    <filter id="ripple-animation">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15"></feGaussianBlur>
+      <feOffset dx="3" dy="3" result="offsetOut"></feOffset>
+      <feComponentTransfer in="SourceGraphic">
+        <feFuncA type="softlight"></feFuncA>
+      </feComponentTransfer>
+      <feFlood flood-color="blue" flood-opacity="0.1"></feFlood>
+      <feFlood flood-color="blue" flood-opacity="0.1"></feFlood>
+      <feFlood flood-color="green" flood-opacity="0.1"></feFlood>
+      <feFlood flood-color="yellow" flood-opacity="0.1"></feFlood>  </filter>
+  </defs>
+
+  <path fill="transparent" filter="url(#ripple-animation)" d="
+    m 505 69 l -33 12 33 12 z
+    m 511 144 l -33 -13 33 -13 z
+    m 566 227 l -33 -26 33 -26 z
+    m 572 297 l -33 -38 33 -38 z
+    m 406 170 l -34 17 33 17 z
+    m 411 241 l -33 -46 33 -46 z
+    m 340 116 l -35 43 33 43 z
+    m 345 188 l -33 -60 33 -60 z
+    m 174 81 l -34 28 33 28 z"
+ />

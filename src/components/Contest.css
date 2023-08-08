@@ -90,3 +90,22 @@
     width: auto;
     margin-top: 2px;
   }
+@media screen and (max-width:1250px) {
+  .card{
+    width: 520px;
+    
+  }
+  .card img{
+    height: 260px;
+  }
+}
+
+  @media screen and (max-width:700px){
+    .card{
+      width: 80vw;
+    }
+    .card img{
+      width: 70vw;
+      height: auto;
+    }
+  }

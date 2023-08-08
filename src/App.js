@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar/Navbar"
 
 import Home from './components/Home'
 
+import back from './assets/back.svg';
+
 
 function App() {
   return (
@@ -16,6 +18,11 @@ function App() {
       </Routes>
     </>
   );
+  // return (
+  //   <>
+  //     <back/>
+  //   </>
+  // )
 }
 
 export default App;

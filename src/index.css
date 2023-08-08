@@ -1,6 +1,13 @@
-body{
-    background-color: #d3e0f3;
-}
 html {
     scroll-behavior: smooth;
-  }
+}
+body{
+    background-color: #d3e0f3;
+    /* background: linear-gradient(-45deg, #8eee52, #eccd54, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	/* animation: gradient 1s ease infinite;
+	height: 100vh; */ 
+}
+ul{
+    list-style: none;
+}  

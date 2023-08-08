@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* .react-multi-carousel-item{
+    max-width: 280px;
+    min-width: 250px;
+} */
+
 .teamcontainer{
     width: 100%;
     justify-content: center;
     background-color: #fff;
 }
-.teamcardcontainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center
-}
+ .teamcardcontainer{
+     /* width: 80vw;
+     margin: auto; */
+     /* display: flex; */
+     justify-content: center;
+} 
 .membercard{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* width: 200px; */
     box-shadow: 0px 0px 10px #aaaaaa;
     /* background-color: #3b82f6; */
     padding: 8px;
@@ -28,7 +35,10 @@
     font-size: 1.5rem;
 }
 .membercard img{
+    max-width: 90%;
+    height: auto;
     width: 200px;
+    /* height: 200px; */
     border-radius: 100%;
 }
 .membercard p{
@@ -36,7 +46,7 @@
     text-transform: uppercase;
     margin-bottom: 5px;
 }
-.header{
+/* .Teamheader{
     text-align: center;
     justify-content: center;
     font-family: "Montserrat" , sans-serif;
@@ -48,11 +58,11 @@
 }
 
 @media (max-width:1000px){
-    .header{
+    .Teamheader{
         padding-top: 15px;
         font-size: 6.4vw;
     }
-}
+} */
 
 
 .text2{
@@ -66,6 +76,11 @@
       color: #0440a1;
       border-bottom: 5px solid #0440a1;
       font-weight: bolder;
+  }
+  @media screen and(min-width:700px) {
+    .teamcardcontainer{
+        margin: 0 5vw;
+    }
   }
   @media screen and (min-width : 1080px){
     .text2 h1{

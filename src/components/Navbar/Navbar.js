@@ -1,51 +1,56 @@
-import React, { useEffect, useState } from 'react'
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import "./Navbar.css"
 import cclogo from '../../assets/cc-logo.svg'
 import cclogomobile from '../../assets/cc-logo-mobile.svg'
-import './Navbar.css'
-import { useMediaQuery } from '@mui/material';
+import React, { useState } from 'react'
 
-const theme = createTheme({
-  palette: {
-    primary:{
-      main : '#fff'
-    }
-  },
-});
+import { FaBars,FaTimes } from "react-icons/fa"
+ const Navbar = () => {
+    const [click, setClick] =useState(false);
+    const handleClick = () =>setClick(!click);
 
-const Navbar = () => {
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  const [logo, setLogo] = useState(cclogo)
-  useEffect(() => {
-    isMobile?
-    setLogo(cclogomobile):
-    setLogo(cclogo);
-  }, [isMobile])
-  
-  return(
-  <>
-    <ThemeProvider theme={theme}>
-      <AppBar position="sticky"   >
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-          <div className='cclogo'>
-            <img src={logo} alt='cclogo' loading='lazy' />
-          </div>
+    const [color,setColor]=useState(false);
+    const colorChange=()=>{
+        if(window.scrollY >=100){
+            setColor(true);
+        }
+        else{
+            setColor(false);
+        }
+    };
 
-          <Box sx={{m:"0 100px 0 0"}}>
-            <Button color="inherit" sx={{m:"20px 0"}} href='#home'>Home</Button>
-            <Button color="inherit" href='#contest'>Contests</Button>
-            <Button color="inherit" href='#seminar'>Activites</Button>
-            <Button color="inherit" href='#team'>Team</Button>
-          </Box>
-        </Box>
-      </AppBar>
+    window.addEventListener("scroll",colorChange);
 
-    </ThemeProvider>
-  </>
-  )
-  }
-
-export default Navbar
+   return (
+     <div className={color ? "header bg" : "header"}>       {/* made some changes here */}
+        <div>
+          {/* <img src={(window.width>700)? {cclogo}:{cclogomobile}} alt={cclogo} /> */}
+          <picture>
+          <source media="(max-width: 700px)" srcset={cclogomobile} />
+          <img src={cclogo} alt="cclogo" />
+        </picture>
+        </div>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li>
+                <a href='#home'><button>Home</button></a>
+            </li>
+            <li>
+                <a href='#contest'><button>Contest</button></a>
+            </li>
+            <li>
+              <a href='#seminar'><button>Activities</button></a>
+            </li>
+            <li>
+              <a href='#team'><button>Team</button></a>
+            </li>
+        </ul>
+        <div className="hamburger" onClick={handleClick}>
+            {click ? (<FaTimes size={20} style={{color : "#fff"}}/>)
+            :(<FaBars size={20} style={{color : "#000"}}/>)
+            }
+            
+        </div>
+     </div>    
+   )
+ }
+ 
+ export default Navbar

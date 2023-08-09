@@ -34,7 +34,10 @@
 .contestcontainer{
   transition: transform .2s linear ;
   margin: 40px auto;
+}
+.dumcontainer{
   box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2);
+
 }
 .contestcontainer:hover{
   transform: scale(1.1);

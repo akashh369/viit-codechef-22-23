@@ -33,7 +33,7 @@ const Contest = () => {
           <div className="contestcontainer"
           >
             <Reveal>
-              <div>
+              <div className='dumcontainer'>
             <div className="card">
               <img src="https://cdn.codechef.com/download/small-banner/LTCD22TS/1662645462.jpg" alt="Denim Jeans"/>
               <h1>Tailored Jeans</h1>
@@ -46,9 +46,9 @@ const Contest = () => {
           </div>
 
 
-            <div className="contestcontainer animate__animated animate__fadeInLeft ">
+            <div className='contestcontainer animate__animated animate__fadeInLeft'>
             <Reveal>
-            <div>
+            <div className="dumcontainer">
 
             <div className="card">
               <img src="https://cdn.codechef.com/download/small-banner/HPCF2022/1664027933.jpeg" alt="Denim Jeans"/>
@@ -63,7 +63,7 @@ const Contest = () => {
 
           <div className="contestcontainer animate__animated animate__fadeInRight">
             <Reveal keyframes={customAnimation}>
-            <div>
+            <div className="dumcontainer">
             <div className="card">
               <img src="https://cdn.codechef.com/download/small-banner/PRNV2022/1664683882.jpeg" alt="Denim Jeans"/>
               <h1>Tailored Jeans</h1>

@@ -31,16 +31,16 @@ import { FaBars,FaTimes } from "react-icons/fa"
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li>
-                <a href='#home'><button>Home</button></a>
+                <a href='#home'><button onClick={handleClick}>Home</button></a>
             </li>
             <li>
-                <a href='#contest'><button>Contest</button></a>
+                <a href='#contest'><button onClick={handleClick}>Contest</button></a>
             </li>
             <li>
-              <a href='#seminar'><button>Activities</button></a>
+              <a href='#seminar'><button onClick={handleClick}>Activities</button></a>
             </li>
             <li>
-              <a href='#team'><button>Team</button></a>
+              <a href='#team'><button onClick={handleClick}>Team</button></a>
             </li>
         </ul>
         <div className="hamburger" onClick={handleClick}>
